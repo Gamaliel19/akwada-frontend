@@ -1,16 +1,84 @@
-# React + Vite
+# 🌍 ONG AKWADA - Plateforme Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 À propos du projet
 
-Currently, two official plugins are available:
+Ce projet est le site fictif(Je m'amusais un peu à coder) de l'**ONG X**, une organisation dédiée au développement communautaire, à la formation et à la valorisation culturelle dans la région du **Mayo-Kebbi Est au Tchad**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+L'objectif de cette plateforme est de :
 
-## React Compiler
+* Présenter les missions et les valeurs de l'ONG.
+* Faciliter les partenariats nationaux et internationaux.
+* Offrir une visibilité aux actions de terrain menées auprès des populations locales.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Fonctionnalités
 
-## Expanding the ESLint configuration
+* **Hero Section Moderne** : Une interface immersive avec animations fluides pour capter l'attention dès l'arrivée.
+* **Design Responsif** : Entièrement optimisé pour mobiles, tablettes et ordinateurs.
+* **Navigation Intuitive** : Accès rapide aux sections "À propos", "Projets" et "Contact".
+* **Architecture Modulaire** : Composants React réutilisables et CSS Modules pour une maintenance facilitée.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Stack Technique
+
+* **Frontend** : [React.js](https://reactjs.org/)
+* **Routing** : [React Router v6](https://reactrouter.com/)
+* **Styling** : CSS Modules (pour un scope local des styles)
+* **Animations** : CSS3 Transitions & Keyframes
+
+## ⚙️ Installation et Configuration
+
+Pour cloner et lancer ce projet localement, suivez ces étapes :
+
+1. **Cloner le dépôt**
+```bash
+git clone https://github.com/votre-utilisateur/ong-akwada.git
+cd ong-akwada
+
+```
+
+
+2. **Installer les dépendances**
+```bash
+npm install
+
+```
+
+
+3. **Lancer l'application en mode développement**
+```bash
+npm start
+
+```
+
+
+L'application sera accessible sur `http://localhost:3000`.
+
+## 📁 Structure du Projet (Aperçu)
+
+```text
+src/
+├── components/        # Composants réutilisables (Button, Card, etc.)
+│   ├── Hero/          # Section Hero (JSX + CSS Module)
+│   └── Layout/        # Navbar, Footer, etc.
+├── pages/             # Vues principales (Home, About, Contact)
+├── assets/            # Images, logos et icônes
+└── App.js             # Configuration des routes
+
+```
+
+## 🎨 Design & Identité Visuelle
+
+Le design repose sur une palette de couleurs institutionnelles :
+
+* **Primaire** : Bleu profond (Sérieux, Institutionnel)
+* **Accent** : Blanc / Gris clair (Clarté, Transparence)
+* **Typographie** : Sans-serif moderne pour une lisibilité maximale.
+
+---
+
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues !
+
+---
+
+**ONG X** — *Agir pour un développement durable et inclusif au Tchad.*
