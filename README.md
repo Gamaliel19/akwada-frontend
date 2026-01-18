@@ -1,4 +1,4 @@
-# 🌍 ONG AKWADA - Plateforme Web
+# 🌍 ONG X - Plateforme Web
 
 ## 📋 À propos du projet
 
