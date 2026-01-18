@@ -1,0 +1,63 @@
+.presentation {
+  background-color: var(--color-light-gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.text h2 {
+  margin-bottom: var(--space-md);
+}
+
+.text p {
+  max-width: 600px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: var(--space-md);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* ---- Bloc chiffres clés ---- */
+.highlight {
+  background-color: var(--color-white);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+
+.stat span {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

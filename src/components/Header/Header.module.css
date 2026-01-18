@@ -1,0 +1,152 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- Logo --- */
+/* --- Brand (logo + nom) --- */
+.brand {
+  display: flex;
+  align-items: center; /* alignement vertical parfait */
+  gap: 0.6rem;
+}
+
+.logo img {
+  height: 56px; /* légèrement ajusté pour équilibre visuel */
+  object-fit: contain;
+  display: block;
+}
+
+.brandName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f3c88;
+  line-height: 1; /* évite le décalage vertical */
+  white-space: nowrap;
+}
+
+
+
+/* --- Navigation desktop --- */
+.navDesktop {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.navDesktop a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.navDesktop a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #1f3c88;
+}
+
+.cta {
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  background-color: #1f3c88;
+  color: #ffffff !important;
+  font-size: 0.9rem;
+}
+
+/* --- Burger --- */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 2px;
+  width: 100%;
+  background-color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+/* Animation burger */
+.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* --- Menu mobile --- */
+.navMobile {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 72px);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  padding-top: 3rem;
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+}
+
+.navMobile a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.ctaMobile {
+  margin-top: 1rem;
+  padding: 0.7rem 1.8rem;
+  border-radius: 30px;
+  background-color: #1f3c88;
+  color: #ffffff !important;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
