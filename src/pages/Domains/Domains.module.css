@@ -1,0 +1,63 @@
+.page {
+  width: 100%;
+}
+
+/* Hero page */
+.hero {
+  background-color: #1f3c88;
+  color: #ffffff;
+  padding: 4.5rem 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  max-width: 700px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Details */
+.details {
+  padding: 5rem 1.5rem;
+  background-color: #f7f9fc;
+}
+
+.domain {
+  max-width: 820px;
+  margin: 0 auto 3rem;
+}
+
+.domain h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1f3c88;
+  margin-bottom: 0.8rem;
+}
+
+.domain p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .details {
+    padding: 3.5rem 1.5rem;
+  }
+}

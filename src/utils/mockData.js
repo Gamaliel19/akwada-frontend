@@ -61,7 +61,7 @@ export const projects = [
   }
 ]
 
-export const newsArticles = [
+export const newsData = [
   {
     id: 1,
     title: "Lancement du programme d'alphabétisation 2024",
@@ -73,7 +73,7 @@ Cette année, le programme touchera 200 femmes réparties dans 12 villages cibl�
 "L'alphabétisation est bien plus qu'apprendre à lire et écrire. C'est donner aux femmes les outils pour participer activement au développement de leur communauté", a déclaré le coordinateur du programme.
 
 Les sessions se dérouleront trois fois par semaine pendant six mois, avec un suivi personnalisé par des animateurs formés. Un accent particulier sera mis sur les activités génératrices de revenus pour assurer la pérennité des acquis.`,
-    date: "2024-01-15",
+    date: '15-01-2024',
     author: "Équipe AKWADA",
     category: "Formation",
     image: "/images/news-1.jpg"
@@ -91,7 +91,7 @@ Les groupes de danse venus de 15 villages différents ont particulièrement marq
 "Ce festival est essentiel pour transmettre notre patrimoine aux jeunes et valoriser notre identité culturelle", a souligné un des chefs traditionnels présents.
 
 L'événement a également permis de générer des revenus pour les artisans locaux, avec près de 300 produits artisanaux vendus durant le festival.`,
-    date: "2024-01-13",
+    date: "13-01-2024",
     author: "Équipe Communication",
     category: "Culture",
     image: "/images/news-2.jpg"
@@ -109,7 +109,7 @@ Au-delà de la construction des infrastructures, le programme inclut la formatio
 "L'accès à l'eau potable est un droit fondamental et un levier essentiel pour le développement communautaire. Ce partenariat nous permettra de toucher des zones jusqu'ici mal desservies", a indiqué la directrice d'AKWADA.
 
 Les travaux débuteront dès le mois prochain, avec une approche participative impliquant les communautés bénéficiaires à toutes les étapes du projet.`,
-    date: "2024-01-08",
+    date: "08-01-2024",
     author: "Direction AKWADA",
     category: "Développement communautaire",
     image: "/images/news-3.jpg"
@@ -127,7 +127,7 @@ Le centre propose trois filières : menuiserie, couture et mécanique moto. Chaq
 Les apprentis bénéficient d'un équipement moderne grâce au soutien de partenaires techniques et financiers. Un système de micro-crédit est également prévu pour faciliter l'installation des diplômés.
 
 Les inscriptions pour la deuxième promotion sont ouvertes et visent particulièrement les jeunes filles, afin de promouvoir l'égalité des genres dans l'accès à la formation professionnelle.`,
-    date: "2024-01-05",
+    date: "05-01-2024",
     author: "Service Formation",
     category: "Formation",
     image: "/images/news-4.jpg"
@@ -175,3 +175,33 @@ export const domains = [
     ]
   }
 ]
+
+export const projectsMock = [
+  {
+    id: 1,
+    title: "Programme de formation des jeunes",
+    description:
+      "Formation professionnelle destinée aux jeunes afin de renforcer leur employabilité et favoriser l’autonomie économique.",
+    location: "Bongor – Mayo-Kebbi Est",
+    status: "En cours",
+    image: "/src/assets/images/project-1.png",
+  },
+  {
+    id: 2,
+    title: "Appui aux initiatives communautaires",
+    description:
+      "Soutien aux projets communautaires locaux visant à améliorer les conditions de vie et renforcer la cohésion sociale.",
+    location: "Zones rurales du Mayo-Kebbi Est",
+    status: "Achevé",
+    image: "/src/assets/images/project-2.png",
+  },
+  {
+    id: 3,
+    title: "Promotion de la culture locale",
+    description:
+      "Valorisation des pratiques culturelles locales à travers des événements, ateliers et programmes de transmission.",
+    location: "Mayo-Kebbi Est",
+    status: "En cours",
+    image: "/src/assets/images/project-3.png",
+  },
+];
